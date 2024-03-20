@@ -109,7 +109,15 @@ namespace Watercalc
         {
             History history = new History();
             this.Hide();
-            history.readData();
+           //Lỗi lần đầu chạy chưa có file text
+           try
+           {
+               history.readData();
+           }
+           catch 
+           {
+               
+           }
             history.ShowDialog();
             history.Close();
             this.Show();
