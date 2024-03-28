@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AsmC#\\Watercalc\\Watercalc\\Watercalc.csproj",
+      "projectUniqueName": "E:\\AsmC#\\ASM2-C#\\Watercalc\\Watercalc\\Watercalc.csproj",
       "projectName": "Watercalc",
-      "projectPath": "E:\\AsmC#\\Watercalc\\Watercalc\\Watercalc.csproj",
+      "projectPath": "E:\\AsmC#\\ASM2-C#\\Watercalc\\Watercalc\\Watercalc.csproj",
       "packagesPath": "C:\\Users\\ploic\\.nuget\\packages\\",
-      "outputPath": "E:\\AsmC#\\Watercalc\\Watercalc\\obj\\",
+      "outputPath": "E:\\AsmC#\\ASM2-C#\\Watercalc\\Watercalc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ploic\\AppData\\Roaming\\NuGet\\NuGet.Config",

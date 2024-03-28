@@ -1,4 +1,4 @@
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Security.Cryptography.X509Certificates;
 
 namespace Watercalc
 {
@@ -10,7 +10,7 @@ namespace Watercalc
         }
         public class Set_nightmode
         {
-            public static bool nightmode = false;
+           public  static bool nightmode = false;
         }
 
         public Main_interface()
@@ -49,7 +49,6 @@ namespace Watercalc
             }
         }
 
-
         private void btn_h_Click(object sender, EventArgs e)
         {
             Type_customer.type = "House Hold";
@@ -64,8 +63,8 @@ namespace Watercalc
         {
             Type_customer.type = "Administrative agency or public services";
             calc window_calc = new calc();
-            window_calc.txt_numMem.Enabled = false;
-            window_calc.txt_numMem.BackColor = Color.Black;
+            window_calc.txt_numMem.Enabled = false; // set lại về false
+            window_calc.txt_numMem.BackColor = Color.DarkGray;
             this.Hide();
             window_calc.ShowDialog();
             window_calc.Close();
@@ -76,8 +75,8 @@ namespace Watercalc
         {
             Type_customer.type = "Production units";
             calc window_calc = new calc();
-            window_calc.txt_numMem.Enabled = false;
-            window_calc.txt_numMem.BackColor = Color.Black;
+            window_calc.txt_numMem.Enabled = false; // set lại về false
+            window_calc.txt_numMem.BackColor = Color.DarkGray;
             this.Hide();
             window_calc.ShowDialog();
             window_calc.Close();
@@ -88,8 +87,8 @@ namespace Watercalc
         {
             Type_customer.type = "Business services";
             calc window_calc = new calc();
-            window_calc.txt_numMem.Enabled = false;
-            window_calc.txt_numMem.BackColor = Color.Black;
+            window_calc.txt_numMem.Enabled = false; // set lại về false
+            window_calc.txt_numMem.BackColor = Color.DarkGray;
             this.Hide();
             window_calc.ShowDialog();
             window_calc.Close();
@@ -109,15 +108,15 @@ namespace Watercalc
         {
             History history = new History();
             this.Hide();
-           //Lỗi lần đầu chạy chưa có file text
-           try
-           {
-               history.readData();
-           }
-           catch 
-           {
-               
-           }
+            //Lỗi lần đầu chạy chưa có file text
+            try
+            {
+                history.readData();
+            }
+            catch 
+            {
+                
+            }
             history.ShowDialog();
             history.Close();
             this.Show();

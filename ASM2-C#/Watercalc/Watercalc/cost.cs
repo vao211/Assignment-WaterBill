@@ -25,19 +25,15 @@ namespace Watercalc
             if (!Set_nightmode.nightmode)
             {
                 this.BackColor = SystemColors.Control;
-                btn_exit.BackColor= SystemColors.Control;
-                ForeColor= Color.Black;
+                btn_exit.BackColor = SystemColors.Control;
+                ForeColor = Color.Black;
             }
-        }
-
-        private void cost_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }

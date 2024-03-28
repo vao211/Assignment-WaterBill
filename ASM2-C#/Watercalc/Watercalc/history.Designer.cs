@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btn_exit = new Button();
             txt_history = new TextBox();
             btn_clear = new Button();
+            bindingSource1 = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
             // btn_exit
@@ -63,6 +66,9 @@
             btn_clear.UseVisualStyleBackColor = true;
             btn_clear.Click += btn_clear_Click;
             // 
+            // bindingSource1
+            // 
+            // 
             // History
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
@@ -77,6 +83,7 @@
             Name = "History";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "history";
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -86,5 +93,6 @@
         private Button btn_exit;
         private TextBox txt_history;
         private Button btn_clear;
+        private BindingSource bindingSource1;
     }
 }

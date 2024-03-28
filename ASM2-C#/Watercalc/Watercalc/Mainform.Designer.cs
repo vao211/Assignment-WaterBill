@@ -41,6 +41,7 @@
             // 
             // btn_history
             // 
+            btn_history.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_history.Location = new Point(1, 0);
             btn_history.Name = "btn_history";
             btn_history.Size = new Size(145, 224);
@@ -51,9 +52,10 @@
             // 
             // btn_cost
             // 
+            btn_cost.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_cost.Location = new Point(1, 219);
             btn_cost.Name = "btn_cost";
-            btn_cost.Size = new Size(145, 264);
+            btn_cost.Size = new Size(145, 261);
             btn_cost.TabIndex = 1;
             btn_cost.Text = "Cost";
             btn_cost.UseVisualStyleBackColor = true;
@@ -62,6 +64,7 @@
             // btn_night
             // 
             btn_night.AutoSize = true;
+            btn_night.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_night.Location = new Point(1, 477);
             btn_night.Name = "btn_night";
             btn_night.Size = new Size(145, 154);

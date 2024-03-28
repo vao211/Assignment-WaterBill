@@ -65,7 +65,6 @@
             Name = "cost";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cost";
-            Load += cost_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
