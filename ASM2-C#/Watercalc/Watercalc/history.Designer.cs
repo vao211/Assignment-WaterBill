@@ -28,71 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            btn_exit = new Button();
-            txt_history = new TextBox();
-            btn_clear = new Button();
-            bindingSource1 = new BindingSource(components);
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
+            btnExit = new Button();
+            txtHistory = new TextBox();
+            btnClear = new Button();
             SuspendLayout();
             // 
-            // btn_exit
+            // btnExit
             // 
-            btn_exit.Location = new Point(1193, 655);
-            btn_exit.Name = "btn_exit";
-            btn_exit.Size = new Size(135, 122);
-            btn_exit.TabIndex = 0;
-            btn_exit.Text = "Exit";
-            btn_exit.UseVisualStyleBackColor = true;
-            btn_exit.Click += btn_exit_Click;
+            btnExit.Location = new Point(1193, 655);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(135, 122);
+            btnExit.TabIndex = 0;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
-            // txt_history
+            // txtHistory
             // 
-            txt_history.Enabled = false;
-            txt_history.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txt_history.Location = new Point(14, 14);
-            txt_history.Multiline = true;
-            txt_history.Name = "txt_history";
-            txt_history.Size = new Size(930, 766);
-            txt_history.TabIndex = 1;
+            txtHistory.Enabled = false;
+            txtHistory.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtHistory.Location = new Point(14, 14);
+            txtHistory.Multiline = true;
+            txtHistory.Name = "txtHistory";
+            txtHistory.Size = new Size(930, 766);
+            txtHistory.TabIndex = 1;
             // 
-            // btn_clear
+            // btnClear
             // 
-            btn_clear.Location = new Point(951, 14);
-            btn_clear.Name = "btn_clear";
-            btn_clear.Size = new Size(144, 71);
-            btn_clear.TabIndex = 2;
-            btn_clear.Text = "Clear";
-            btn_clear.UseVisualStyleBackColor = true;
-            btn_clear.Click += btn_clear_Click;
-            // 
-            // bindingSource1
-            // 
+            btnClear.Location = new Point(951, 14);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(144, 71);
+            btnClear.TabIndex = 2;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // History
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1335, 784);
-            Controls.Add(btn_clear);
-            Controls.Add(txt_history);
-            Controls.Add(btn_exit);
+            Controls.Add(btnClear);
+            Controls.Add(txtHistory);
+            Controls.Add(btnExit);
             Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "History";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "history";
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btn_exit;
-        private TextBox txt_history;
-        private Button btn_clear;
-        private BindingSource bindingSource1;
+        private Button btnExit;
+        private TextBox txtHistory;
+        private Button btnClear;
     }
 }

@@ -4,11 +4,11 @@ namespace Watercalc
 {
     public partial class Main_interface : Form
     {
-        public class Type_customer
+        public class TypeCustomer
         {
-            public static string type = "";
+            public static string type = string.Empty;
         }
-        public class Set_nightmode
+        public class SetNightMode
         {
            public  static bool nightmode = false;
         }
@@ -17,41 +17,41 @@ namespace Watercalc
         {
             InitializeComponent();
         }
-        private void btn_night_Click(object sender, EventArgs e)
+        private void btnNight_Click(object sender, EventArgs e)
         {
-            Set_nightmode.nightmode = !Set_nightmode.nightmode;
-            if (Set_nightmode.nightmode)
+            SetNightMode.nightmode = !SetNightMode.nightmode;
+            if (SetNightMode.nightmode)
             {
                 this.BackColor = Color.Black;
                 ForeColor = Color.White;
-                btn_a.BackColor = Color.Black;
-                btn_h.BackColor = Color.Black;
-                btn_p.BackColor = Color.Black;
-                btn_b.BackColor = Color.Black;
-                btn_cost.BackColor = Color.Black;
-                btn_history.BackColor = Color.Black;
-                btn_night.BackColor = Color.Black;
-                btn_exit.BackColor = Color.Black;
+                btnA.BackColor = Color.Black;
+                btnH.BackColor = Color.Black;
+                btnP.BackColor = Color.Black;
+                btnB.BackColor = Color.Black;
+                btnCost.BackColor = Color.Black;
+                btnHistory.BackColor = Color.Black;
+                btnNight.BackColor = Color.Black;
+                btnExit.BackColor = Color.Black;
 
             }
-            if (!Set_nightmode.nightmode)
+            if (!SetNightMode.nightmode)
             {
                 this.BackColor = SystemColors.Control;
                 ForeColor = Color.Black;
-                btn_a.BackColor = Color.White;
-                btn_h.BackColor = Color.White;
-                btn_p.BackColor = Color.White;
-                btn_b.BackColor = Color.White;
-                btn_cost.BackColor = Color.White;
-                btn_history.BackColor = Color.White;
-                btn_night.BackColor = Color.White;
-                btn_exit.BackColor = Color.White;
+                btnA.BackColor = Color.White;
+                btnH.BackColor = Color.White;
+                btnP.BackColor = Color.White;
+                btnB.BackColor = Color.White;
+                btnCost.BackColor = Color.White;
+                btnHistory.BackColor = Color.White;
+                btnNight.BackColor = Color.White;
+                btnExit.BackColor = Color.White;
             }
         }
 
-        private void btn_h_Click(object sender, EventArgs e)
+        private void btnH_Click(object sender, EventArgs e)
         {
-            Type_customer.type = "House Hold";
+            TypeCustomer.type = "House Hold";
             calc window_calc = new calc();
             this.Hide();
             window_calc.ShowDialog();
@@ -59,43 +59,43 @@ namespace Watercalc
             this.Show();
         }
 
-        private void btn_a_Click(object sender, EventArgs e)
+        private void btnA_Click(object sender, EventArgs e)
         {
-            Type_customer.type = "Administrative agency or public services";
+            TypeCustomer.type = "Administrative agency or public services";
             calc window_calc = new calc();
-            window_calc.txt_numMem.Enabled = false; // set lại về false
-            window_calc.txt_numMem.BackColor = Color.DarkGray;
+            window_calc.txtNumMem.Enabled = false; // set lại về false
+            window_calc.txtNumMem.BackColor = Color.DarkGray;
             this.Hide();
             window_calc.ShowDialog();
             window_calc.Close();
             this.Show();
         }
 
-        private void btn_p_Click(object sender, EventArgs e)
+        private void btnP_Click(object sender, EventArgs e)
         {
-            Type_customer.type = "Production units";
+            TypeCustomer.type = "Production units";
             calc window_calc = new calc();
-            window_calc.txt_numMem.Enabled = false; // set lại về false
-            window_calc.txt_numMem.BackColor = Color.DarkGray;
+            window_calc.txtNumMem.Enabled = false; // set lại về false
+            window_calc.txtNumMem.BackColor = Color.DarkGray;
             this.Hide();
             window_calc.ShowDialog();
             window_calc.Close();
             this.Show();
         }
 
-        private void btn_b_Click(object sender, EventArgs e)
+        private void btnB_Click(object sender, EventArgs e)
         {
-            Type_customer.type = "Business services";
+            TypeCustomer.type = "Business services";
             calc window_calc = new calc();
-            window_calc.txt_numMem.Enabled = false; // set lại về false
-            window_calc.txt_numMem.BackColor = Color.DarkGray;
+            window_calc.txtNumMem.Enabled = false; // set lại về false
+            window_calc.txtNumMem.BackColor = Color.DarkGray;
             this.Hide();
             window_calc.ShowDialog();
             window_calc.Close();
             this.Show();
         }
 
-        private void btn_cost_Click(object sender, EventArgs e)
+        private void btnCost_Click(object sender, EventArgs e)
         {
             cost cost = new cost();
             this.Hide();
@@ -104,7 +104,7 @@ namespace Watercalc
             this.Show();
         }
 
-        private void btn_history_Click(object sender, EventArgs e)
+        private void btnHistory_Click(object sender, EventArgs e)
         {
             History history = new History();
             this.Hide();
@@ -122,7 +122,7 @@ namespace Watercalc
             this.Show();
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

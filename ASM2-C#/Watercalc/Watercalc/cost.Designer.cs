@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cost));
             pictureBox1 = new PictureBox();
-            btn_exit = new Button();
+            btnExit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -43,24 +44,25 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // btn_exit
+            // btnExit
             // 
-            btn_exit.Location = new Point(988, 543);
-            btn_exit.Name = "btn_exit";
-            btn_exit.Size = new Size(137, 76);
-            btn_exit.TabIndex = 1;
-            btn_exit.Text = "Exit";
-            btn_exit.UseVisualStyleBackColor = true;
-            btn_exit.Click += btn_exit_Click;
+            btnExit.Location = new Point(988, 543);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(137, 76);
+            btnExit.TabIndex = 1;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // cost
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1156, 688);
-            Controls.Add(btn_exit);
+            Controls.Add(btnExit);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "cost";
             StartPosition = FormStartPosition.CenterScreen;
@@ -72,6 +74,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button btn_exit;
+        private Button btnExit;
     }
 }

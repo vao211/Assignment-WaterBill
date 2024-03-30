@@ -28,53 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txt_numMem = new TextBox();
-            txt_lastIndex = new TextBox();
-            txt_thisIndex = new TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(calc));
+            txtNumMem = new TextBox();
+            txtLastIndex = new TextBox();
+            txtThisIndex = new TextBox();
             lbl_numMem = new Label();
             lbl_lastIndex = new Label();
             lbl_thisIndex = new Label();
-            btn_calc = new Button();
-            btn_clear = new Button();
-            txt_result = new TextBox();
+            btnCalc = new Button();
+            btnClear = new Button();
+            txtResult = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            btn_exit = new Button();
+            btnExit = new Button();
             label3 = new Label();
-            txt_consum = new TextBox();
+            txtConsum = new TextBox();
             label4 = new Label();
-            btn_save = new Button();
+            btnSave = new Button();
             lbl_name = new Label();
-            txt_name = new TextBox();
+            txtName = new TextBox();
             lbl_type = new Label();
             SuspendLayout();
             // 
-            // txt_numMem
+            // txtNumMem
             // 
-            txt_numMem.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt_numMem.Location = new Point(284, 279);
-            txt_numMem.Multiline = true;
-            txt_numMem.Name = "txt_numMem";
-            txt_numMem.Size = new Size(68, 33);
-            txt_numMem.TabIndex = 0;
+            txtNumMem.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNumMem.Location = new Point(284, 279);
+            txtNumMem.Multiline = true;
+            txtNumMem.Name = "txtNumMem";
+            txtNumMem.Size = new Size(68, 33);
+            txtNumMem.TabIndex = 0;
             // 
-            // txt_lastIndex
+            // txtLastIndex
             // 
-            txt_lastIndex.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txt_lastIndex.Location = new Point(284, 348);
-            txt_lastIndex.Multiline = true;
-            txt_lastIndex.Name = "txt_lastIndex";
-            txt_lastIndex.Size = new Size(261, 47);
-            txt_lastIndex.TabIndex = 1;
+            txtLastIndex.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtLastIndex.Location = new Point(284, 348);
+            txtLastIndex.Multiline = true;
+            txtLastIndex.Name = "txtLastIndex";
+            txtLastIndex.Size = new Size(261, 47);
+            txtLastIndex.TabIndex = 1;
             // 
-            // txt_thisIndex
+            // txtThisIndex
             // 
-            txt_thisIndex.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txt_thisIndex.Location = new Point(284, 441);
-            txt_thisIndex.Multiline = true;
-            txt_thisIndex.Name = "txt_thisIndex";
-            txt_thisIndex.Size = new Size(261, 47);
-            txt_thisIndex.TabIndex = 2;
+            txtThisIndex.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtThisIndex.Location = new Point(284, 441);
+            txtThisIndex.Multiline = true;
+            txtThisIndex.Name = "txtThisIndex";
+            txtThisIndex.Size = new Size(261, 47);
+            txtThisIndex.TabIndex = 2;
             // 
             // lbl_numMem
             // 
@@ -106,36 +107,36 @@
             lbl_thisIndex.TabIndex = 5;
             lbl_thisIndex.Text = "This Month Index";
             // 
-            // btn_calc
+            // btnCalc
             // 
-            btn_calc.Location = new Point(632, 348);
-            btn_calc.Name = "btn_calc";
-            btn_calc.Size = new Size(93, 77);
-            btn_calc.TabIndex = 6;
-            btn_calc.Text = "Calculate";
-            btn_calc.UseVisualStyleBackColor = true;
-            btn_calc.Click += btn_calc_Click;
+            btnCalc.Location = new Point(632, 348);
+            btnCalc.Name = "btnCalc";
+            btnCalc.Size = new Size(93, 77);
+            btnCalc.TabIndex = 6;
+            btnCalc.Text = "Calculate";
+            btnCalc.UseVisualStyleBackColor = true;
+            btnCalc.Click += btnCalc_Click;
             // 
-            // btn_clear
+            // btnClear
             // 
-            btn_clear.Location = new Point(649, 431);
-            btn_clear.Name = "btn_clear";
-            btn_clear.Size = new Size(61, 42);
-            btn_clear.TabIndex = 7;
-            btn_clear.Text = "clear";
-            btn_clear.UseVisualStyleBackColor = true;
-            btn_clear.Click += btn_clear_Click;
+            btnClear.Location = new Point(649, 431);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(61, 42);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
-            // txt_result
+            // txtResult
             // 
-            txt_result.Cursor = Cursors.No;
-            txt_result.Enabled = false;
-            txt_result.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txt_result.Location = new Point(884, 334);
-            txt_result.Multiline = true;
-            txt_result.Name = "txt_result";
-            txt_result.Size = new Size(289, 47);
-            txt_result.TabIndex = 9;
+            txtResult.Cursor = Cursors.No;
+            txtResult.Enabled = false;
+            txtResult.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtResult.Location = new Point(884, 334);
+            txtResult.Multiline = true;
+            txtResult.Name = "txtResult";
+            txtResult.Size = new Size(289, 47);
+            txtResult.TabIndex = 9;
             // 
             // label1
             // 
@@ -157,15 +158,15 @@
             label2.TabIndex = 11;
             label2.Text = "VND";
             // 
-            // btn_exit
+            // btnExit
             // 
-            btn_exit.Location = new Point(1219, 544);
-            btn_exit.Name = "btn_exit";
-            btn_exit.Size = new Size(136, 97);
-            btn_exit.TabIndex = 12;
-            btn_exit.Text = "Exit";
-            btn_exit.UseVisualStyleBackColor = true;
-            btn_exit.Click += btn_exit_Click;
+            btnExit.Location = new Point(1219, 544);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(136, 97);
+            btnExit.TabIndex = 12;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // label3
             // 
@@ -177,16 +178,16 @@
             label3.TabIndex = 13;
             label3.Text = "Consumption:";
             // 
-            // txt_consum
+            // txtConsum
             // 
-            txt_consum.AllowDrop = true;
-            txt_consum.Enabled = false;
-            txt_consum.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txt_consum.Location = new Point(884, 439);
-            txt_consum.Multiline = true;
-            txt_consum.Name = "txt_consum";
-            txt_consum.Size = new Size(289, 47);
-            txt_consum.TabIndex = 14;
+            txtConsum.AllowDrop = true;
+            txtConsum.Enabled = false;
+            txtConsum.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtConsum.Location = new Point(884, 439);
+            txtConsum.Multiline = true;
+            txtConsum.Name = "txtConsum";
+            txtConsum.Size = new Size(289, 47);
+            txtConsum.TabIndex = 14;
             // 
             // label4
             // 
@@ -198,15 +199,15 @@
             label4.TabIndex = 15;
             label4.Text = "M3";
             // 
-            // btn_save
+            // btnSave
             // 
-            btn_save.Location = new Point(650, 300);
-            btn_save.Name = "btn_save";
-            btn_save.Size = new Size(60, 42);
-            btn_save.TabIndex = 16;
-            btn_save.Text = "Save";
-            btn_save.UseVisualStyleBackColor = true;
-            btn_save.Click += btn_save_Click;
+            btnSave.Location = new Point(650, 300);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(60, 42);
+            btnSave.TabIndex = 16;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // lbl_name
             // 
@@ -218,14 +219,14 @@
             lbl_name.TabIndex = 17;
             lbl_name.Text = "Name";
             // 
-            // txt_name
+            // txtName
             // 
-            txt_name.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txt_name.Location = new Point(490, 153);
-            txt_name.Multiline = true;
-            txt_name.Name = "txt_name";
-            txt_name.Size = new Size(389, 38);
-            txt_name.TabIndex = 18;
+            txtName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtName.Location = new Point(490, 153);
+            txtName.Multiline = true;
+            txtName.Name = "txtName";
+            txtName.Size = new Size(389, 38);
+            txtName.TabIndex = 18;
             // 
             // lbl_type
             // 
@@ -242,25 +243,26 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1358, 643);
             Controls.Add(lbl_type);
-            Controls.Add(txt_name);
+            Controls.Add(txtName);
             Controls.Add(lbl_name);
-            Controls.Add(btn_save);
+            Controls.Add(btnSave);
             Controls.Add(label4);
-            Controls.Add(txt_consum);
+            Controls.Add(txtConsum);
             Controls.Add(label3);
-            Controls.Add(btn_exit);
+            Controls.Add(btnExit);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(txt_result);
-            Controls.Add(btn_clear);
-            Controls.Add(btn_calc);
+            Controls.Add(txtResult);
+            Controls.Add(btnClear);
+            Controls.Add(btnCalc);
             Controls.Add(lbl_thisIndex);
             Controls.Add(lbl_lastIndex);
             Controls.Add(lbl_numMem);
-            Controls.Add(txt_thisIndex);
-            Controls.Add(txt_lastIndex);
-            Controls.Add(txt_numMem);
+            Controls.Add(txtThisIndex);
+            Controls.Add(txtLastIndex);
+            Controls.Add(txtNumMem);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "calc";
             StartPosition = FormStartPosition.CenterScreen;
@@ -272,24 +274,24 @@
 
         #endregion
 
-        public TextBox txt_numMem;
-        private TextBox txt_lastIndex;
-        private TextBox txt_thisIndex;
+        public TextBox txtNumMem;
+        private TextBox txtLastIndex;
+        private TextBox txtThisIndex;
         private Label lbl_numMem;
         private Label lbl_lastIndex;
         private Label lbl_thisIndex;
-        private Button btn_calc;
-        private Button btn_clear;
-        private TextBox txt_result;
+        private Button btnCalc;
+        private Button btnClear;
+        private TextBox txtResult;
         private Label label1;
         private Label label2;
-        private Button btn_exit;
+        private Button btnExit;
         private Label label3;
-        private TextBox txt_consum;
+        private TextBox txtConsum;
         private Label label4;
-        private Button btn_save;
+        private Button btnSave;
         private Label lbl_name;
-        private TextBox txt_name;
+        private TextBox txtName;
         private Label lbl_type;
     }
 }
