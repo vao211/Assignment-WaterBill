@@ -1,0 +1,14 @@
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\bin\Debug\net8.0\CheckSuperPrime.exe
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\bin\Debug\net8.0\CheckSuperPrime.deps.json
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\bin\Debug\net8.0\CheckSuperPrime.runtimeconfig.json
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\bin\Debug\net8.0\CheckSuperPrime.dll
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\bin\Debug\net8.0\CheckSuperPrime.pdb
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.AssemblyInfoInputs.cache
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.AssemblyInfo.cs
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.csproj.CoreCompileInputs.cache
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.dll
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\refint\CheckSuperPrime.dll
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.pdb
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\CheckSuperPrime.genruntimeconfig.cache
+C:\Users\ploic\Desktop\C#\CheckSuperPrime\obj\Debug\net8.0\ref\CheckSuperPrime.dll
